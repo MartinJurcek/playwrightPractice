@@ -1,7 +1,7 @@
 const { test, expect } = require("@playwright/test");
 const { waitForDebugger } = require("inspector");
 
-test.only("Browser context Playwright test", async ({ page }) => {
+test("Browser context Playwright test", async ({ page }) => {
   const email = "anshika@gmail.com";
   const productName = "ZARA COAT 3";
   const products = page.locator(".card-body");
